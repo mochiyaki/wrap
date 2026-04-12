@@ -1,0 +1,21 @@
+[
+    {
+        "useWsl": ["Claude", "Codex", "OpenClaw"],
+        "Command":[
+            {
+                "Coder":"coder --vscode --lite",
+                "Hermes":"hermes",
+                "Gemini":"gemini",
+                "Claude":"claude",
+                "Codex":"codex",
+                "OpenClaw":"openclaw tui"
+            }
+        ],
+        "Content":[
+            {
+                "Push":"Please help to pull all changes and git commit to origin/main branch",
+                "Describe":"Please create a README.md for the project in the current directory, including architecture, structure diagram, workflow, etc."
+            }
+        ]
+    }
+]

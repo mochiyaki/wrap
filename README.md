@@ -1,6 +1,6 @@
 # wrap
 
-An opinionated extension that provides a **Wrapper** command menu for quickly running shell commands or sending prompts to a shared terminal. The extension is designed for AI-assisted development workflows, such as sending prompts to Coder, Claude, Codex, Gemini or any interactive CLI.  It is lightweight, built in TypeScript, and requires only the VS Code API.
+An opinionated extension that provides a **Wrapper** command menu for quickly running shell commands or sending prompts to a shared terminal. The extension is designed for AI-assisted development workflows, such as sending prompts to Coder, Claude, Codex, Gemini, Hermes, OpenClaw or any interactive CLI.  It is lightweight, built in TypeScript, and requires only the VS Code API.
 
 ---
 
@@ -62,7 +62,7 @@ flowchart TD
 ```
 ├─ assets
 │  └─ images
-│      └─ icon.png            # Extension icon
+│      └─ wrap.png           # Extension icon
 ├─ src
 │  └─ extension.ts           # Main extension logic
 ├─ wrapper.json              # Sample configuration (optional)
@@ -75,11 +75,11 @@ flowchart TD
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/mochiyaki/helper.git
+   git clone https://github.com/mochiyaki/wrap.git
    ```
 2. Install deps and build:
    ```bash
-   cd agent-git
+   cd wrap
    npm install
    npm run build   # creates dist/extension.js
    ```

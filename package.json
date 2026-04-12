@@ -1,0 +1,57 @@
+{
+  "name": "wrap",
+  "displayName": "wrap",
+  "description": "customized command execution and content/prompt transfer",
+  "version": "0.0.1",
+  "publisher": "gguf",
+  "author": {
+    "name": "gguf"
+  },
+  "license": "MIT",
+	"icon": "assets/images/wrap.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mochiyaki/wrap.git"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "wrapper.showMenu",
+        "title": "Wrapper: Show Menu"
+      }
+    ],
+    "configuration": {
+      "title": "Wrapper",
+      "properties": {
+        "wrapper.configPath": {
+          "type": "string",
+          "default": "",
+          "description": "Custom path to wrapper.json. Leave empty to use the workspace root."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "package": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "build": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
+    "watch": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.74.0",
+    "@vscode/vsce": "^3.7.0",
+    "esbuild": "^0.27.2",
+    "typescript": "^5.3.0"
+  }
+}
