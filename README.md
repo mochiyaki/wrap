@@ -1,8 +1,8 @@
 # wrap
 
-An opinionated extension that provides a **Wrapper** command menu for quickly running shell commands or sending prompts to a shared terminal. The extension is designed for AI-assisted development workflows, such as sending prompts to Coder, Claude, Codex, Gemini, Hermes, OpenClaw or any interactive CLI.  It is lightweight, built in TypeScript, and requires only the VS Code API.
+An opinionated extension that provides a **Wrapper** command menu for quickly running shell commands or sending prompts to a shared terminal. The extension is designed for AI-assisted development workflows, such as sending prompts to Coder, Claude, Codex, Gemini, Gold, Hermes, OpenClaw or any interactive CLI.  It is lightweight, built in TypeScript, and requires only the VS Code API.
 
----
+![screenshot](https://raw.githubusercontent.com/mochiyaki/wrap/master/demo.gif)
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ An opinionated extension that provides a **Wrapper** command menu for quickly ru
 - [Contributing](#contributing)
 - [License](#license)
 
----
+![screenshot](https://raw.githubusercontent.com/mochiyaki/wrap/master/demo2.gif)
 
 ## Architecture
 
